@@ -1,4 +1,4 @@
-# Ticker Disambiguation for Investment Research | 投资研究中的股票代码消歧
+# Ticker Disambiguation for Investment Research📈 | 投资研究中的股票代码消歧🤔
 
 > **Resolve ambiguous company names and aliases to standardized US equity ticker symbols.**
 > **将模糊的公司名称和别名解析为标准化的美股股票代码。**
