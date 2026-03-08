@@ -92,11 +92,12 @@ python scripts/evaluate.py --predictions data/test_zeroshot_preds.jsonl --gold d
 
 ### Comparison Matrix (to be filled after training) | 对比矩阵（训练后填写）
 
-| Model 模型 | Test Accuracy 测试准确率 | Test Macro-F1 | Ambiguity Accuracy 歧义准确率 |
-|---|---|---|---|
-| Rule baseline | 96.55% | 0.914 | 95.00% |
-| Base model (zero-shot) | TBD | TBD | TBD |
-| LoRA fine-tuned | TBD | TBD | TBD |
+| Model 模型 | Prompt 提示词 | Test Accuracy 测试准确率 | Test Macro-F1 | Ambiguity Accuracy 歧义准确率 | Hard Accuracy 困难集准确率 |
+|---|---|---|---|---|---|
+| Rule baseline | N/A | 96.55% | 0.914 | 95.00% | TBD |
+| Base model (zero-shot) | Plain | TBD | TBD | TBD | TBD |
+| Base model (zero-shot) | Policy-aware | TBD | TBD | TBD | TBD |
+| LoRA fine-tuned | TBD | TBD | TBD | TBD | TBD |
 
 ### Error Analysis Checklist | 错误分析检查表
 

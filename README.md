@@ -32,16 +32,20 @@ TickerDisambiguation/
 │   ├── train.jsonl                # Training set (80 samples) | 训练集（80 条）
 │   ├── val.jsonl                  # Validation set (20 samples) | 验证集（20 条）
 │   ├── test.jsonl                 # Test set (29 samples) | 测试集（29 条）
-│   └── ambiguous_eval.jsonl       # Ambiguity-focused eval (20 samples) | 歧义专项评估（20 条）
+│   ├── ambiguous_eval.jsonl       # Ambiguity-focused eval (20 samples) | 歧义专项评估（20 条）
+│   └── hard_eval.jsonl            # Hard/colloquial eval (30 samples) | 口语化困难评估（30 条）
 ├── docs/                          # Documentation | 文档
 │   ├── task_spec.md               # Task definition & metrics | 任务定义与指标
 │   ├── label_policy.md            # Labeling rules & defaults | 标注规则与默认映射
-│   └── baseline_notes.md          # Baseline design & results | 基线方案与结果
+│   ├── baseline_notes.md          # Baseline design & results | 基线方案与结果
+│   └── zero_shot_results.md       # Zero-shot experiment results | Zero-shot 实验结果
 ├── prompts/                       # Prompt templates | 提示词模板
-│   └── zero_shot_prompt.txt       # Zero-shot inference prompt | Zero-shot 推理提示词
+│   ├── zero_shot_plain.txt        # Plain zero-shot prompt (no rules) | 纯 zero-shot 提示词（无规则）
+│   └── zero_shot_prompt.txt       # Policy-aware zero-shot prompt | 含规则的 zero-shot 提示词
 └── scripts/                       # Code | 代码
     ├── build_dataset.py           # Dataset generation & split | 数据集生成与切分
-    └── evaluate.py                # Evaluation + rule baseline | 评估脚本 + 规则基线
+    ├── evaluate.py                # Evaluation + rule baseline | 评估脚本 + 规则基线
+    └── run_zero_shot.py           # Zero-shot model inference | Zero-shot 模型推理
 ```
 
 ---
@@ -165,9 +169,10 @@ Prediction file format | 预测文件格式：
 ## Roadmap | 路线图
 
 - [x] Task definition & label policy | 任务定义与标注策略
-- [x] Dataset v1 (129 samples + 20 ambiguity eval) | 数据集 v1
+- [x] Dataset v1 (129 samples + 20 ambiguity eval + 30 hard eval) | 数据集 v1
 - [x] Rule baseline + evaluation script | 规则基线 + 评估脚本
-- [ ] Zero-shot base model baseline | Zero-shot 基础模型基线
+- [x] Zero-shot inference script + dual prompt variants | Zero-shot 推理脚本 + 双提示词变体
+- [ ] Run zero-shot experiments & fill comparison matrix | 运行 zero-shot 实验并填写对比矩阵
 - [ ] LoRA fine-tuning script | LoRA 微调脚本
 - [ ] Before/after comparison report | 微调前后对比报告
 - [ ] Integration with research copilot workflow | 集成到研究 copilot 工作流

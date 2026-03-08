@@ -1,0 +1,6 @@
+Resolve the correct stock ticker symbol from the user request below.
+Return ONLY the ticker symbol (e.g. AAPL, GOOGL, BRK-B).
+Do not include any explanation.
+
+Request: {input}
+Answer:
