@@ -1,0 +1,30 @@
+{"input": "Research the Bezos company.", "predicted": "UNKNOWN", "raw_output": "ZB   |  假", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me the old Facebook stock.", "predicted": "UNKNOWN", "raw_output": "FB  |  标准化", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is Buffett's cheaper share class doing?", "predicted": "META", "raw_output": "Meta  |  未指定股", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up the non-voting Google shares.", "predicted": "GOOGL", "raw_output": "GOOGL. 解析结果：", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "What's up with the search giant's class C stock?", "predicted": "GOOG", "raw_output": "GOOG  | 未指定股", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Show me the retail Berkshire shares.", "predicted": "BRK-B", "raw_output": "BRK-B。 \n\nExplanation / 解", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is the Zuckerberg social media empire performing?", "predicted": "UNKNOWN", "raw_output": "ZCOO | Facebook\n\nExplanation /", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research the expensive Berkshire shares.", "predicted": "BRK-A", "raw_output": "BRK.A\nExplanation / 解释", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Analyze the cheaper Google share class.", "predicted": "GOOGL", "raw_output": "GOOGL。 解析：首先", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "What's the deal with Elon's EV company?", "predicted": "UNKNOWN", "raw_output": "BNB  |  标准", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up the voting shares of Alphabet.", "predicted": "GOOGL", "raw_output": "GOOGL。 \n\nExplanation / 解", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is the Mouse House doing lately?", "predicted": "UNKNOWN", "raw_output": "HULU  | 未指定", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research Jensen's chip company.", "predicted": "UNKNOWN", "raw_output": "JNJ. \n\nExplanation / 解释", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Show me the premium Berkshire class.", "predicted": "BRK-A", "raw_output": "BRK-A. 解析：首先", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is Satya's cloud company doing?", "predicted": "META", "raw_output": "#META\nExplanation / 解释：", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me the stock formerly known as Facebook.", "predicted": "UNKNOWN", "raw_output": "FB  |  标准化", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research the company that runs Instagram and WhatsApp.", "predicted": "UNKNOWN", "raw_output": "IGRTX | 未指定股", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Analyze the Alphabet shares without voting rights.", "predicted": "GOOGL", "raw_output": "GOOGL\nExplanation / 解释", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up Buffett's six-figure stock.", "predicted": "META", "raw_output": "META.BF  |  标", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How's the world's biggest online retailer doing?", "predicted": "UNKNOWN", "raw_output": "To determine the correct stock ticker symbol", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research the AWS parent company.", "predicted": "AMZN", "raw_output": "AMZN。 解析：首先，", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "What's happening with the iPhone maker?", "predicted": "AAPL", "raw_output": "AAPL\nExplanation / 解释：", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me a report on the streaming wars leader.", "predicted": "META", "raw_output": "META.000014", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How are Alphabet's class A voting shares performing?", "predicted": "GOOG", "raw_output": "GOOG\nExplanation / 解释：", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research the Chinese e-commerce giant behind Taobao.", "predicted": "UNKNOWN", "raw_output": "TACO\nNormalize / 标", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Show me data for the Temu parent.", "predicted": "UNKNOWN", "raw_output": "TMUS.001.0", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is the biggest semiconductor foundry performing?", "predicted": "UNKNOWN", "raw_output": "900570.S", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Analyze the Omaha-based conglomerate's affordable shares.", "predicted": "UNKNOWN", "raw_output": "OXO.O  |  �", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up the government data analytics company.", "predicted": "GOOGL", "raw_output": "GOOGL\nExplanation / 解释", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research Lisa Su's chip company.", "predicted": "UNKNOWN", "raw_output": "LBCHS. \n\nExplanation / 解", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}

@@ -94,9 +94,9 @@ python scripts/evaluate.py --predictions data/test_zeroshot_preds.jsonl --gold d
 
 | Model 模型 | Prompt 提示词 | Test Accuracy 测试准确率 | Test Macro-F1 | Ambiguity Accuracy 歧义准确率 | Hard Accuracy 困难集准确率 |
 |---|---|---|---|---|---|
-| Rule baseline | N/A | 96.55% | 0.914 | 95.00% | TBD |
-| Base model (zero-shot) | Plain | TBD | TBD | TBD | TBD |
-| Base model (zero-shot) | Policy-aware | TBD | TBD | TBD | TBD |
+| Rule baseline | N/A | **96.55%** | **0.914** | **95.00%** | 30.00% |
+| Qwen2.5-0.5B-Instruct (zero-shot) | Plain | 51.72% | 0.447 | 40.00% | 13.33% |
+| Qwen2.5-0.5B-Instruct (zero-shot) | Policy-aware | 75.86% | 0.757 | 70.00% | 23.33% |
 | LoRA fine-tuned | TBD | TBD | TBD | TBD | TBD |
 
 ### Error Analysis Checklist | 错误分析检查表

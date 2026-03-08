@@ -1,0 +1,30 @@
+{"input": "Research the Bezos company.", "predicted": "UNKNOWN", "raw_output": "None of the provided options are related to", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me the old Facebook stock.", "predicted": "UNKNOWN", "raw_output": "FB. \n\nExplanation: The Facebook stock", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is Buffett's cheaper share class doing?", "predicted": "UNKNOWN", "raw_output": "None of the listed tickers are related", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up the non-voting Google shares.", "predicted": "GOOGL", "raw_output": "GOOGL. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "What's up with the search giant's class C stock?", "predicted": "GOOGL", "raw_output": "GOOGL. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Show me the retail Berkshire shares.", "predicted": "BRK-B", "raw_output": "BRK-B. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is the Zuckerberg social media empire performing?", "predicted": "UNKNOWN", "raw_output": "N/A\nTicker Symbol: N", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research the expensive Berkshire shares.", "predicted": "BRK-B", "raw_output": "BRK-B. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Analyze the cheaper Google share class.", "predicted": "GOOGL", "raw_output": "GOOGL. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "What's the deal with Elon's EV company?", "predicted": "UNKNOWN", "raw_output": "None of the listed companies have an EV", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up the voting shares of Alphabet.", "predicted": "GOOGL", "raw_output": "GOOGL. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is the Mouse House doing lately?", "predicted": "UNKNOWN", "raw_output": "None of the listed tickers are related", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research Jensen's chip company.", "predicted": "UNKNOWN", "raw_output": "None of the provided options are related to", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Show me the premium Berkshire class.", "predicted": "BRK-B", "raw_output": "BRK-B. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is Satya's cloud company doing?", "predicted": "UNKNOWN", "raw_output": "None of the provided options are related to", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me the stock formerly known as Facebook.", "predicted": "UNKNOWN", "raw_output": "FB. \n\nExplanation: The stock previously", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research the company that runs Instagram and WhatsApp.", "predicted": "UNKNOWN", "raw_output": "None of the companies listed in your request", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Analyze the Alphabet shares without voting rights.", "predicted": "UNKNOWN", "raw_output": "None of the listed stocks have voting rights", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up Buffett's six-figure stock.", "predicted": "UNKNOWN", "raw_output": "None of the provided options are stock tick", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How's the world's biggest online retailer doing?", "predicted": "UNKNOWN", "raw_output": "None of the options provided are valid stock", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research the AWS parent company.", "predicted": "UNKNOWN", "raw_output": "None of the provided options are related to", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "What's happening with the iPhone maker?", "predicted": "AAPL", "raw_output": "AAPL. \n\nExplanation: The user", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me a report on the streaming wars leader.", "predicted": "UNKNOWN", "raw_output": "None of the listed stocks are considered to", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How are Alphabet's class A voting shares performing?", "predicted": "GOOGL", "raw_output": "GOOGL. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research the Chinese e-commerce giant behind Taobao.", "predicted": "UNKNOWN", "raw_output": "TAIWANSEMICOMMOD", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Show me data for the Temu parent.", "predicted": "UNKNOWN", "raw_output": "None of the provided options are related to", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is the biggest semiconductor foundry performing?", "predicted": "UNKNOWN", "raw_output": "None of the listed stocks are semiconductor companies", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Analyze the Omaha-based conglomerate's affordable shares.", "predicted": "UNKNOWN", "raw_output": "None of the options provided are Omaha-based", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up the government data analytics company.", "predicted": "GOOGL", "raw_output": "GOOGL. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research Lisa Su's chip company.", "predicted": "AAPL", "raw_output": "AAPL\nExplanation: The user is", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}

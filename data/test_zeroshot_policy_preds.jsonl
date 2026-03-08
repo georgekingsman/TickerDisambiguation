@@ -1,0 +1,29 @@
+{"input": "Give me a report on Google's class A shares.", "predicted": "GOOG", "raw_output": "GOOG. \n\nExplanation / 解释", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research Alphabet class A for me.", "predicted": "GOOG", "raw_output": "GOOG. \n\nExplanation / 解释", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research GOOGL.", "predicted": "GOOGL", "raw_output": "GOOGL. \n\nExplanation / 解", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is Netflix stock doing?", "predicted": "NFLX", "raw_output": "Netflix → NFLX  |", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is Berkshire doing?", "predicted": "BRK-B", "raw_output": "BRK-B\nExplanation / 解释", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research BRK/B.", "predicted": "BRK-B", "raw_output": "BRK-B. \n\nExplanation / 解", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research the Bezos company.", "predicted": "UNKNOWN", "raw_output": "ZB   |  假", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me a summary on Alphabet.", "predicted": "GOOGL", "raw_output": "GOOGL。 \n\nExplanation / 解", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up JPM financials.", "predicted": "JPM", "raw_output": "JPM.US。 \n\nNormalize and return", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is JP Morgan doing?", "predicted": "JPM", "raw_output": "JPM  | 未指定股", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How has BRK/A performed?", "predicted": "BRK-A", "raw_output": "BRK.A  |  Meta Platforms", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research Apple Inc for me.", "predicted": "AAPL", "raw_output": "AAPL。 \n\nExplanation / 解释", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up the latest Apple financials.", "predicted": "AAPL", "raw_output": "AAPL\nExplanation / 解释：", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is Facebook doing these days?", "predicted": "META", "raw_output": "FB.META\nExplanation / 解释", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Analyze Berkshire Hathaway for me.", "predicted": "BRK-B", "raw_output": "BRK-B. 解析结果：", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up AMZN data.", "predicted": "AMZN", "raw_output": "AMZN  | 未指定股", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me a memo on Google stock.", "predicted": "GOOGL", "raw_output": "GOOGL。 \n\nExplanation / 解", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "What's happening with BRK B?", "predicted": "BRK-B", "raw_output": "BRK-B. \n\nExplanation / 解", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up the voting class of Alphabet stock.", "predicted": "GOOGL", "raw_output": "GOOGL。 解析：首先", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "What's the performance of Alphabet class C?", "predicted": "GOOG", "raw_output": "GOOG\nExplanation / 解释：", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me a report on Amazon.", "predicted": "UNKNOWN", "raw_output": "NA. \n\nNote / 提示：", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Quick analysis of GOOG please.", "predicted": "GOOGL", "raw_output": "GOOGL。 \n\n请纠正错误", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me a memo on Tesla.", "predicted": "TSLA", "raw_output": "TSLA。 \n\nExplanation / 解", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Look into BRK-B for my portfolio.", "predicted": "BRK-B", "raw_output": "BRK-B。 \n\nNote: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How has BofA been performing?", "predicted": "UNKNOWN", "raw_output": "BOF.A. | BofA", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is AMD stock doing?", "predicted": "AMD", "raw_output": "#AMD  | 未指定股", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me data on Alphabet's class C stock.", "predicted": "GOOG", "raw_output": "GOOG. \n\nExplanation / 解释", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "What's happening with Microsoft?", "predicted": "MSFT", "raw_output": "MSFT  |  没", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me a memo on Chase bank stock.", "predicted": "UNKNOWN", "raw_output": "CHX.0054。", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}

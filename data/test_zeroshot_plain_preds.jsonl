@@ -1,0 +1,29 @@
+{"input": "Give me a report on Google's class A shares.", "predicted": "GOOGL", "raw_output": "GOOGL. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research Alphabet class A for me.", "predicted": "AAPL", "raw_output": "AAPL. \n\nExplanation: The user", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research GOOGL.", "predicted": "GOOGL", "raw_output": "GOOGL. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is Netflix stock doing?", "predicted": "UNKNOWN", "raw_output": "Netflix\nticker-symbol: Netflix\nExplanation", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is Berkshire doing?", "predicted": "BRK-B", "raw_output": "#BRK-B\nThe answer to", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research BRK/B.", "predicted": "GOOGL", "raw_output": "GOOGL. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research the Bezos company.", "predicted": "UNKNOWN", "raw_output": "None of the provided options are related to", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me a summary on Alphabet.", "predicted": "GOOG", "raw_output": "Google LLC\nGoogle LLC is an American", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up JPM financials.", "predicted": "UNKNOWN", "raw_output": "None of the provided options are financial companies", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is JP Morgan doing?", "predicted": "JPM", "raw_output": "None\nTicker Symbol: JPM", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How has BRK/A performed?", "predicted": "BRK-A", "raw_output": "BRK-A is a blue-chip", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Research Apple Inc for me.", "predicted": "AAPL", "raw_output": "AAPL. \n\nExplanation: The user", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up the latest Apple financials.", "predicted": "AAPL", "raw_output": "AAPL. \n\nExplanation: The user", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is Facebook doing these days?", "predicted": "UNKNOWN", "raw_output": "FB.OB\nExplanation: The answer", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Analyze Berkshire Hathaway for me.", "predicted": "BRK-B", "raw_output": "BRK-B. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up AMZN data.", "predicted": "AMZN", "raw_output": "AMZN. \n\nExplanation: The user", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me a memo on Google stock.", "predicted": "GOOGL", "raw_output": "GOOGL. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "What's happening with BRK B?", "predicted": "BRK-B", "raw_output": "The answer is that BRK-B is", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Pull up the voting class of Alphabet stock.", "predicted": "GOOGL", "raw_output": "GOOGL. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "What's the performance of Alphabet class C?", "predicted": "GOOGL", "raw_output": "GOOGL\nGOOGL is", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me a report on Amazon.", "predicted": "UNKNOWN", "raw_output": "None of the provided options are for Amazon", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Quick analysis of GOOG please.", "predicted": "GOOGL", "raw_output": "GOOGL. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me a memo on Tesla.", "predicted": "TSLA", "raw_output": "TSLA. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Look into BRK-B for my portfolio.", "predicted": "BRK-B", "raw_output": "BRK-B. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How has BofA been performing?", "predicted": "UNKNOWN", "raw_output": "None of the provided options are for B", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "How is AMD stock doing?", "predicted": "UNKNOWN", "raw_output": "The answer depends on the specific stock being", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me data on Alphabet's class C stock.", "predicted": "GOOGL", "raw_output": "GOOGL. \n\nExplanation: The", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "What's happening with Microsoft?", "predicted": "MSFT", "raw_output": "MSFT. \n\nExplanation: The user", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}
+{"input": "Give me a memo on Chase bank stock.", "predicted": "UNKNOWN", "raw_output": "CHX. \n\nExplanation: The correct", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct"}

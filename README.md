@@ -123,15 +123,20 @@ JSONL, instruction-tuning style | JSONL 指令微调格式：
 
 ## Baseline Results | 基线结果
 
-### Rule Baseline | 规则基线
+### Comparison Matrix | 对比矩阵
 
-| Eval Set 评估集 | Accuracy 准确率 | Macro-F1 | Typical Error 典型错误 |
-|---|---|---|---|
-| test.jsonl | 96.55% | 0.914 | "Bezos company" → UNKNOWN |
-| ambiguous_eval.jsonl | 95.00% | 0.953 | "cheaper Google share class" → GOOGL (should be GOOG 应为 GOOG) |
+| Model 模型 | Prompt 提示词 | Test Acc (29) | Ambiguity Acc (20) | Hard Acc (30) |
+|---|---|---:|---:|---:|
+| Rule baseline 规则基线 | N/A | **96.55%** | **95.00%** | 30.00% |
+| Qwen2.5-0.5B-Instruct | Plain | 51.72% | 40.00% | 13.33% |
+| Qwen2.5-0.5B-Instruct | Policy-aware | 75.86% | 70.00% | 23.33% |
+| LoRA fine-tuned (future) | TBD | TBD | TBD | TBD |
 
-**Key Insight 关键发现**: The rule baseline fails on colloquial references and indirect class descriptions — exactly the cases where fine-tuning adds value.  
-规则基线在口语化引用和间接类别描述上失败——这正是微调能发挥价值的地方。
+> Full results and error analysis in [docs/zero_shot_results.md](docs/zero_shot_results.md)  
+> 完整结果和错误分析见 [docs/zero_shot_results.md](docs/zero_shot_results.md)
+
+**Key Insight 关键发现**: The rule baseline scores 96.55% on test but **only 30% on hard_eval** (colloquial/indirect references). The base model (zero-shot) shows learnable error structure — class confusion and alias failures are systematic patterns that LoRA can fix.  
+规则基线在测试集上 96.55%，但在困难集上**仅 30%**。基础模型的错误是有结构的——股类混淆和别名失败是可通过 LoRA 学习修复的系统性模式。
 
 ---
 
