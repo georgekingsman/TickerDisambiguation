@@ -1,0 +1,16 @@
+Resolve the correct stock ticker symbol from the user request below.
+从以下用户请求中解析出正确的股票代码。
+
+Return ONLY the ticker symbol (e.g. AAPL, GOOGL, BRK-B). Do not include any explanation.
+仅返回股票代码（如 AAPL、GOOGL、BRK-B）。不要包含任何解释。
+
+Rules / 规则:
+- "Google" or "Alphabet" without a class → GOOGL  |  未指定股类时默认 GOOGL
+- "Google class C" or "Alphabet class C" → GOOG   |  明确提到 C 类时 → GOOG
+- "Berkshire" or "Berkshire Hathaway" without a class → BRK-B  |  未指定股类时默认 BRK-B
+- "Berkshire class A" → BRK-A  |  明确提到 A 类时 → BRK-A
+- "Facebook" or "FB" → META   |  旧名称映射到当前代码 META
+- Normalize ticker formats: BRK.B → BRK-B  |  标准化代码格式
+
+Request / 请求: {input}
+Answer / 回答:

@@ -1,0 +1,29 @@
+{"input": "Give me a report on Google's class A shares.", "predicted": "GOOGL"}
+{"input": "Research Alphabet class A for me.", "predicted": "GOOGL"}
+{"input": "Research GOOGL.", "predicted": "GOOGL"}
+{"input": "How is Netflix stock doing?", "predicted": "NFLX"}
+{"input": "How is Berkshire doing?", "predicted": "BRK-B"}
+{"input": "Research BRK/B.", "predicted": "BRK-B"}
+{"input": "Research the Bezos company.", "predicted": "UNKNOWN"}
+{"input": "Give me a summary on Alphabet.", "predicted": "GOOGL"}
+{"input": "Pull up JPM financials.", "predicted": "JPM"}
+{"input": "How is JP Morgan doing?", "predicted": "JPM"}
+{"input": "How has BRK/A performed?", "predicted": "BRK-A"}
+{"input": "Research Apple Inc for me.", "predicted": "AAPL"}
+{"input": "Pull up the latest Apple financials.", "predicted": "AAPL"}
+{"input": "How is Facebook doing these days?", "predicted": "META"}
+{"input": "Analyze Berkshire Hathaway for me.", "predicted": "BRK-B"}
+{"input": "Pull up AMZN data.", "predicted": "AMZN"}
+{"input": "Give me a memo on Google stock.", "predicted": "GOOGL"}
+{"input": "What's happening with BRK B?", "predicted": "BRK-B"}
+{"input": "Pull up the voting class of Alphabet stock.", "predicted": "GOOGL"}
+{"input": "What's the performance of Alphabet class C?", "predicted": "GOOG"}
+{"input": "Give me a report on Amazon.", "predicted": "AMZN"}
+{"input": "Quick analysis of GOOG please.", "predicted": "GOOG"}
+{"input": "Give me a memo on Tesla.", "predicted": "TSLA"}
+{"input": "Look into BRK-B for my portfolio.", "predicted": "BRK-B"}
+{"input": "How has BofA been performing?", "predicted": "BAC"}
+{"input": "How is AMD stock doing?", "predicted": "AMD"}
+{"input": "Give me data on Alphabet's class C stock.", "predicted": "GOOG"}
+{"input": "What's happening with Microsoft?", "predicted": "MSFT"}
+{"input": "Give me a memo on Chase bank stock.", "predicted": "JPM"}

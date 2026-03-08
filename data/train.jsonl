@@ -1,0 +1,80 @@
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How is Microsoft doing lately?", "output": "MSFT"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How are Google's voting shares performing?", "output": "GOOGL"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research BRK-B for me.", "output": "BRK-B"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "What's Elon's car company doing?", "output": "TSLA"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How has BABA performed?", "output": "BABA"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Pull up Tesla stock info.", "output": "TSLA"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research Google for me.", "output": "GOOGL"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Give me a report on Berkshire Hathaway stock.", "output": "BRK-B"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Analyze the class B shares of Berkshire.", "output": "BRK-B"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Pull up Berkshire Hathaway class B data.", "output": "BRK-B"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Pull up TSM financials.", "output": "TSM"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How has NVDA performed recently?", "output": "NVDA"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research Bank of America.", "output": "BAC"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Pull up Alphabet class A stock data.", "output": "GOOGL"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Give me BAC data.", "output": "BAC"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Give me a memo on Alibaba stock.", "output": "BABA"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How is Google stock doing?", "output": "GOOGL"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How is the old Facebook ticker doing?", "output": "META"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How is Berkshire B doing recently?", "output": "BRK-B"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "What's the latest on Tesla Motors?", "output": "TSLA"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research Google's non-voting class C.", "output": "GOOG"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How has Apple stock performed this quarter?", "output": "AAPL"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Analyze Alphabet Inc.", "output": "GOOGL"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research Nadella's company.", "output": "MSFT"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research Intel for me.", "output": "INTC"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Give me info on Google's original IPO share class.", "output": "GOOGL"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research MSFT for me.", "output": "MSFT"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Give me a summary of AAPL.", "output": "AAPL"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Compare Google class C with the market.", "output": "GOOG"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Give me a memo on Zuckerberg's company.", "output": "META"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research JPMorgan for me.", "output": "JPM"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Analyze the non-voting shares of Google.", "output": "GOOG"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research Meta's ad revenue trends.", "output": "META"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Pull up Berkshire's latest filings.", "output": "BRK-B"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Pull up the class A Alphabet shares.", "output": "GOOGL"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Pull up Facebook's latest earnings.", "output": "META"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Analyze Palantir's growth.", "output": "PLTR"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "What's Warren Buffett's company doing?", "output": "BRK-B"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research Advanced Micro Devices.", "output": "AMD"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research Pinduoduo.", "output": "PDD"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How has Facebook stock changed since the rebrand?", "output": "META"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Pull up INTC data.", "output": "INTC"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Analyze BRK.B performance.", "output": "BRK-B"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How is Palantir doing?", "output": "PLTR"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Analyze Google's class C shares.", "output": "GOOG"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How is Jensen Huang's company performing?", "output": "NVDA"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "What's happening with FB?", "output": "META"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research Disney stock.", "output": "DIS"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How has Google class A performed recently?", "output": "GOOGL"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Give me Nvidia's earnings summary.", "output": "NVDA"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How is PDD doing?", "output": "PDD"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "What's the price of Berkshire Hathaway class A?", "output": "BRK-A"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "What's happening with Netflix?", "output": "NFLX"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research Berkshire class A.", "output": "BRK-A"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research PLTR.", "output": "PLTR"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Give me a memo on Berkshire Hathaway's affordable shares.", "output": "BRK-B"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "What's the deal with Facebook now that it's called Meta?", "output": "META"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "What's the outlook for Google?", "output": "GOOGL"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "What about BRK-A? How's it doing?", "output": "BRK-A"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research Facebook stock.", "output": "META"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research Tesla for me.", "output": "TSLA"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How is GOOG doing?", "output": "GOOG"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Pull up Google's earnings.", "output": "GOOGL"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Analyze Berkshire Hathaway class B shares.", "output": "BRK-B"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research Buffett's class A shares.", "output": "BRK-A"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How's the Mouse House stock?", "output": "DIS"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Give me a memo on Microsoft stock.", "output": "MSFT"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research NFLX.", "output": "NFLX"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How is Taiwan Semiconductor doing?", "output": "TSM"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How has Intel been performing lately?", "output": "INTC"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Research Berkshire Hathaway.", "output": "BRK-B"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Analyze Amazon's latest quarter.", "output": "AMZN"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Give me a quick memo on Google class C over the last 6 months.", "output": "GOOG"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How is TSLA doing?", "output": "TSLA"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How has Alphabet performed this year?", "output": "GOOGL"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Analyze Meta Platforms.", "output": "META"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "What's the outlook for Apple?", "output": "AAPL"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Analyze AMD's recent performance.", "output": "AMD"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "How are Berkshire's class A shares doing?", "output": "BRK-A"}
+{"instruction": "Resolve the stock ticker symbol from the user request. Return only the ticker.", "input": "Give me a memo on DIS.", "output": "DIS"}
