@@ -1,0 +1,6 @@
+system,test_acc,test_f1,ambiguity_acc,hard_acc,hallucination_rate,verbosity_rate
+Rule baseline,96.55,0.914,95.00,30.00,0.00,0.00
+Base + plain prompt,51.72,0.447,40.00,13.33,TBD,TBD
+Base + policy-aware prompt,75.86,0.757,70.00,23.33,TBD,TBD
+LoRA v1 + plain prompt (seed42),68.97,0.696,55.00,50.00,0.00,0.00
+LoRA v2 + plain prompt,TBD,TBD,TBD,TBD,TBD,TBD

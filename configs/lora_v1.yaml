@@ -1,0 +1,42 @@
+# LoRA v1 Configuration – Ticker Disambiguation
+# LoRA v1 配置 – 股票代码消歧
+
+model:
+  name: Qwen/Qwen2.5-0.5B-Instruct
+  max_length: 128
+  dtype: bf16  # fallback: fp16 (CUDA) or fp32 (MPS/CPU)
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+  task_type: CAUSAL_LM
+
+training:
+  epochs: 3
+  learning_rate: 2.0e-4
+  per_device_train_batch_size: 8
+  per_device_eval_batch_size: 8
+  gradient_accumulation_steps: 2
+  warmup_ratio: 0.03
+  weight_decay: 0.01
+  lr_scheduler_type: cosine
+  logging_steps: 10
+  eval_strategy: epoch
+  save_strategy: epoch
+  load_best_model_at_end: true
+  metric_for_best_model: eval_loss
+
+data:
+  train: data/train_v2.jsonl
+  val: data/val_v2.jsonl
+  dev_hard: data/dev_hard.jsonl
+  prompt_template: prompts/zero_shot_plain.txt
+
+output:
+  dir: checkpoints/lora_v1

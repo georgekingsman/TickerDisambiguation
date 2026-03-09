@@ -1,5 +1,10 @@
+# Intermediate training checkpoints (keep only final adapter)
+checkpoints/*/checkpoint-*/
+
+# Python
 __pycache__/
 *.pyc
+.venv/
+
+# OS
 .DS_Store
-*.egg-info/
-.env

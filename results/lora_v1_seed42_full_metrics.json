@@ -1,0 +1,314 @@
+{
+  "seed": 42,
+  "smoke": false,
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "config": "configs/lora_v1.yaml",
+  "train_samples": 392,
+  "val_samples": 69,
+  "dev_hard_samples": 40,
+  "epochs": 3,
+  "max_steps": -1,
+  "train_time_seconds": 106.7,
+  "val_accuracy": 0.5942,
+  "dev_hard_accuracy": 0.475,
+  "composite_score": 0.5227,
+  "val_errors": [
+    {
+      "input": "How is the challenger chip designer in CPUs and GPUs?",
+      "gold": "AMD",
+      "predicted": "NVDA",
+      "raw": "NVDA"
+    },
+    {
+      "input": "Analyze the company that runs Instagram.",
+      "gold": "META",
+      "predicted": "GOOG",
+      "raw": "GOOG"
+    },
+    {
+      "input": "What's happening with FB?",
+      "gold": "META",
+      "predicted": "UNKNOWN",
+      "raw": "FB"
+    },
+    {
+      "input": "Research Google for me.",
+      "gold": "GOOGL",
+      "predicted": "GOOG",
+      "raw": "GOOG"
+    },
+    {
+      "input": "How is Jensen Huang's company performing?",
+      "gold": "NVDA",
+      "predicted": "BRK-B",
+      "raw": "BRK-B"
+    },
+    {
+      "input": "Research the Berkshire shares created for everyday investors.",
+      "gold": "BRK-B",
+      "predicted": "BRK-A",
+      "raw": "BRK-A"
+    },
+    {
+      "input": "Pull up Facebook's latest earnings.",
+      "gold": "META",
+      "predicted": "UNKNOWN",
+      "raw": "FB"
+    },
+    {
+      "input": "Update me on GOOGL.",
+      "gold": "GOOGL",
+      "predicted": "GOOG",
+      "raw": "GOOG"
+    },
+    {
+      "input": "Pull up the class A Alphabet shares.",
+      "gold": "GOOGL",
+      "predicted": "GOOG",
+      "raw": "GOOG"
+    },
+    {
+      "input": "How is the company building the Cybertruck?",
+      "gold": "TSLA",
+      "predicted": "JPM",
+      "raw": "JPM"
+    },
+    {
+      "input": "Analyze the Berkshire stock that debuted as a lower entry point.",
+      "gold": "BRK-B",
+      "predicted": "BRK-A",
+      "raw": "BRK-A"
+    },
+    {
+      "input": "Analyze Alphabet's class A equity.",
+      "gold": "GOOGL",
+      "predicted": "GOOG",
+      "raw": "GOOG"
+    },
+    {
+      "input": "Brief me on the Facebook stock.",
+      "gold": "META",
+      "predicted": "UNKNOWN",
+      "raw": "FB"
+    },
+    {
+      "input": "How have Google's A shares done?",
+      "gold": "GOOGL",
+      "predicted": "GOOG",
+      "raw": "GOOG"
+    },
+    {
+      "input": "Research the dominant cloud infrastructure provider.",
+      "gold": "AMZN",
+      "predicted": "PLTR",
+      "raw": "PLTR"
+    },
+    {
+      "input": "How is the company headed by Tim Cook performing?",
+      "gold": "AAPL",
+      "predicted": "MSFT",
+      "raw": "MSFT"
+    },
+    {
+      "input": "How is the firm Tim Cook runs?",
+      "gold": "AAPL",
+      "predicted": "BRK-A",
+      "raw": "BRK-A"
+    },
+    {
+      "input": "Pull up googl data.",
+      "gold": "GOOGL",
+      "predicted": "GOOG",
+      "raw": "GOOG"
+    },
+    {
+      "input": "How is Meta stock doing?",
+      "gold": "META",
+      "predicted": "MSFT",
+      "raw": "MSFT"
+    },
+    {
+      "input": "Pull up META data.",
+      "gold": "META",
+      "predicted": "AMZN",
+      "raw": "AMZN"
+    },
+    {
+      "input": "Analyze the stock of Mark Zuckerberg's firm.",
+      "gold": "META",
+      "predicted": "MSFT",
+      "raw": "MSFT"
+    },
+    {
+      "input": "Analyze the leading EV manufacturer.",
+      "gold": "TSLA",
+      "predicted": "NVDA",
+      "raw": "NVDA"
+    },
+    {
+      "input": "What's the current trading symbol for Facebook?",
+      "gold": "META",
+      "predicted": "UNKNOWN",
+      "raw": "FB"
+    },
+    {
+      "input": "How is baba performing?",
+      "gold": "BABA",
+      "predicted": "BRK-B",
+      "raw": "BRK-B"
+    },
+    {
+      "input": "How is Taiwan Semiconductor doing?",
+      "gold": "TSM",
+      "predicted": "UNKNOWN",
+      "raw": "TTSG"
+    },
+    {
+      "input": "Give me a report on Berkshire Hathaway stock.",
+      "gold": "BRK-B",
+      "predicted": "BRK-A",
+      "raw": "BRK-A"
+    },
+    {
+      "input": "Analyze Meta Platforms.",
+      "gold": "META",
+      "predicted": "MSFT",
+      "raw": "MSFT"
+    },
+    {
+      "input": "Give me data on the company behind Prime Video.",
+      "gold": "AMZN",
+      "predicted": "NVDA",
+      "raw": "NVDA"
+    }
+  ],
+  "dev_hard_errors": [
+    {
+      "input": "How is the firm Tim Cook leads?",
+      "gold": "AAPL",
+      "predicted": "MSFT",
+      "raw": "MSFT"
+    },
+    {
+      "input": "Analyze the company Mark Zuckerberg built.",
+      "gold": "META",
+      "predicted": "MSFT",
+      "raw": "MSFT"
+    },
+    {
+      "input": "How is Elon Musk's automotive venture?",
+      "gold": "TSLA",
+      "predicted": "AMZN",
+      "raw": "AMZN"
+    },
+    {
+      "input": "How is the company Lisa Su turned around?",
+      "gold": "AMD",
+      "predicted": "AMZN",
+      "raw": "AMZN"
+    },
+    {
+      "input": "Research the conglomerate Buffett runs from Omaha.",
+      "gold": "BRK-B",
+      "predicted": "BRK-A",
+      "raw": "BRK-A"
+    },
+    {
+      "input": "How is the Alphabet class with shareholder votes?",
+      "gold": "GOOGL",
+      "predicted": "GOOG",
+      "raw": "GOOG"
+    },
+    {
+      "input": "Analyze Alphabet's voting equity.",
+      "gold": "GOOGL",
+      "predicted": "GOOG",
+      "raw": "GOOG"
+    },
+    {
+      "input": "How are the Alphabet shares with full voting participation?",
+      "gold": "GOOGL",
+      "predicted": "GOOG",
+      "raw": "GOOG"
+    },
+    {
+      "input": "Research Berkshire's broadly accessible shares.",
+      "gold": "BRK-B",
+      "predicted": "BRK-A",
+      "raw": "BRK-A"
+    },
+    {
+      "input": "Give me data on the Berkshire class everyday investors buy.",
+      "gold": "BRK-B",
+      "predicted": "BRK-A",
+      "raw": "BRK-A"
+    },
+    {
+      "input": "Research the Berkshire stock priced for retail buyers.",
+      "gold": "BRK-B",
+      "predicted": "BRK-A",
+      "raw": "BRK-A"
+    },
+    {
+      "input": "Give me data on the owner of YouTube.",
+      "gold": "GOOGL",
+      "predicted": "GOOG",
+      "raw": "GOOG"
+    },
+    {
+      "input": "Give me info on the company behind the Model S.",
+      "gold": "TSLA",
+      "predicted": "UNKNOWN",
+      "raw": "MAST"
+    },
+    {
+      "input": "Research the company that runs chip foundry services for Apple.",
+      "gold": "TSM",
+      "predicted": "NVDA",
+      "raw": "NVDA"
+    },
+    {
+      "input": "Research the Omaha oracle's investment vehicle.",
+      "gold": "BRK-B",
+      "predicted": "JPM",
+      "raw": "JPM"
+    },
+    {
+      "input": "Analyze the electric car disruptor.",
+      "gold": "TSLA",
+      "predicted": "NVDA",
+      "raw": "NVDA"
+    },
+    {
+      "input": "How is the platform that used to be called Facebook?",
+      "gold": "META",
+      "predicted": "UNKNOWN",
+      "raw": "FB"
+    },
+    {
+      "input": "How is the dominant search engine company?",
+      "gold": "GOOGL",
+      "predicted": "GOOG",
+      "raw": "GOOG"
+    },
+    {
+      "input": "Research the largest contract chipmaker in the world.",
+      "gold": "TSM",
+      "predicted": "NVDA",
+      "raw": "NVDA"
+    },
+    {
+      "input": "Analyze the biggest e-commerce company from China.",
+      "gold": "BABA",
+      "predicted": "AMZN",
+      "raw": "AMZN"
+    },
+    {
+      "input": "How is the company behind the Temu shopping platform?",
+      "gold": "PDD",
+      "predicted": "AMZN",
+      "raw": "AMZN"
+    }
+  ],
+  "adapter_path": "checkpoints/lora_v1_seed42"
+}

@@ -67,6 +67,30 @@ def error_analysis(gold_labels, pred_labels, inputs):
     return errors
 
 
+def hallucination_and_verbosity(pred_data, ticker_set):
+    """Compute hallucination rate and verbosity rate from raw predictions."""
+    n = len(pred_data)
+    if n == 0:
+        return 0.0, 0.0
+    hallucinations = 0
+    verbose = 0
+    for item in pred_data:
+        pred = item.get("predicted", "").strip().upper()
+        raw = item.get("raw_output", pred)
+        if pred not in ticker_set and pred != "UNKNOWN":
+            hallucinations += 1
+        if len(raw.split()) > 1:
+            verbose += 1
+    return hallucinations / n, verbose / n
+
+
+def confusion_pair_count(errors, pair):
+    """Count how many times a specific (gold, predicted) pair appears."""
+    a, b = pair
+    return sum(1 for e in errors if (e["gold"] == a and e["predicted"] == b)
+               or (e["gold"] == b and e["predicted"] == a))
+
+
 def evaluate(gold_path, pred_path):
     """Run full evaluation and print report. | 运行完整评估并打印报告。"""
     gold_data = load_jsonl(gold_path)
@@ -74,11 +98,13 @@ def evaluate(gold_path, pred_path):
 
     # Build lookup: input text → predicted label | 构建查找表：输入文本 → 预测标签
     pred_map = {item["input"]: item["predicted"].strip().upper() for item in pred_data}
+    raw_map = {item["input"]: item.get("raw_output", item["predicted"]) for item in pred_data}
 
     gold_labels = []
     pred_labels = []
     inputs = []
     missing = []
+    matched_preds = []  # raw prediction records for hallucination/verbosity
 
     for item in gold_data:
         inp = item["input"]
@@ -87,6 +113,7 @@ def evaluate(gold_path, pred_path):
             gold_labels.append(gold_label)
             pred_labels.append(pred_map[inp])
             inputs.append(inp)
+            matched_preds.append({"predicted": pred_map[inp], "raw_output": raw_map[inp]})
         else:
             missing.append(inp)
 
@@ -105,6 +132,11 @@ def evaluate(gold_path, pred_path):
     acc = exact_match_accuracy(gold_labels, pred_labels)
     mf1, per_label = macro_f1(gold_labels, pred_labels)
     errors = error_analysis(gold_labels, pred_labels, inputs)
+    hall_rate, verb_rate = hallucination_and_verbosity(matched_preds, TICKER_SET)
+
+    # Key confusion pairs
+    goog_confusion = confusion_pair_count(errors, ("GOOG", "GOOGL"))
+    brk_confusion = confusion_pair_count(errors, ("BRK-A", "BRK-B"))
 
     # ── Report | 输出报告 ─────────────────────────────
     print("=" * 60)
@@ -117,6 +149,10 @@ def evaluate(gold_path, pred_path):
     print()
     print(f"  Exact Match Accuracy:  {acc:.4f}  ({sum(g == p for g, p in zip(gold_labels, pred_labels))}/{len(gold_labels)})")
     print(f"  Macro-F1:              {mf1:.4f}")
+    print(f"  Hallucination Rate:    {hall_rate:.4f}  ({int(hall_rate * len(gold_labels))}/{len(gold_labels)})")
+    print(f"  Verbosity Rate:        {verb_rate:.4f}  ({int(verb_rate * len(gold_labels))}/{len(gold_labels)})")
+    print(f"  GOOG↔GOOGL confusion:  {goog_confusion}")
+    print(f"  BRK-A↔BRK-B confusion: {brk_confusion}")
     print()
 
     # Per-label breakdown | 每个标签的详细指标
@@ -143,6 +179,10 @@ def evaluate(gold_path, pred_path):
     return {
         "accuracy": acc,
         "macro_f1": mf1,
+        "hallucination_rate": hall_rate,
+        "verbosity_rate": verb_rate,
+        "goog_googl_confusion": goog_confusion,
+        "brk_ab_confusion": brk_confusion,
         "per_label": per_label,
         "errors": errors,
         "n_matched": len(gold_labels),
@@ -234,19 +274,32 @@ if __name__ == "__main__":
     parser.add_argument("--gold", type=str, help="Path to gold JSONL")
     parser.add_argument("--run-rule-baseline", action="store_true",
                         help="Run the rule baseline on --gold and evaluate it")
+    parser.add_argument("--json-output", type=str, default=None,
+                        help="Path to write evaluation results as JSON (optional)")
     args = parser.parse_args()
 
+    results = None
     if args.run_rule_baseline:
         if not args.gold:
             print("Error: --gold is required with --run-rule-baseline")
             sys.exit(1)
         pred_path = args.gold.replace(".jsonl", "_rule_preds.jsonl")
         run_rule_baseline(args.gold, pred_path)
-        evaluate(args.gold, pred_path)
+        results = evaluate(args.gold, pred_path)
     elif args.predictions and args.gold:
-        evaluate(args.gold, args.predictions)
+        results = evaluate(args.gold, args.predictions)
     else:
         print("Usage:")
         print("  python evaluate.py --predictions preds.jsonl --gold gold.jsonl")
         print("  python evaluate.py --run-rule-baseline --gold gold.jsonl")
         sys.exit(1)
+
+    if results and args.json_output:
+        # Serialize per_label (has nested dicts) but skip errors for brevity
+        out = {k: v for k, v in results.items() if k != "per_label"}
+        out["per_label"] = {k: v for k, v in results["per_label"].items()}
+        from pathlib import Path
+        Path(args.json_output).parent.mkdir(parents=True, exist_ok=True)
+        with open(args.json_output, "w") as f:
+            json.dump(out, f, indent=2, ensure_ascii=False)
+        print(f"Results JSON saved to {args.json_output}")
