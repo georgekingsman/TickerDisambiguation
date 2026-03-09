@@ -1,0 +1,104 @@
+{
+  "accuracy": 0.0,
+  "macro_f1": 0.0,
+  "hallucination_rate": 0.0,
+  "verbosity_rate": 0.0,
+  "goog_googl_confusion": 0,
+  "brk_ab_confusion": 0,
+  "errors": [
+    {
+      "input": "How is Facebook stock?",
+      "gold": "META",
+      "predicted": "UNKNOWN"
+    },
+    {
+      "input": "Research the company formerly known as Facebook.",
+      "gold": "META",
+      "predicted": "UNKNOWN"
+    },
+    {
+      "input": "What ticker does Facebook trade under?",
+      "gold": "META",
+      "predicted": "UNKNOWN"
+    },
+    {
+      "input": "Pull up FB.",
+      "gold": "META",
+      "predicted": "UNKNOWN"
+    },
+    {
+      "input": "fb stock data",
+      "gold": "META",
+      "predicted": "UNKNOWN"
+    },
+    {
+      "input": "Analyze FB shares.",
+      "gold": "META",
+      "predicted": "UNKNOWN"
+    },
+    {
+      "input": "Research Meta Platforms stock.",
+      "gold": "META",
+      "predicted": "MSFT"
+    },
+    {
+      "input": "How is Meta doing today?",
+      "gold": "META",
+      "predicted": "GOOGL"
+    },
+    {
+      "input": "Give me info on the old Facebook company.",
+      "gold": "META",
+      "predicted": "MSFT"
+    },
+    {
+      "input": "What's happening with the company that rebranded from Facebook?",
+      "gold": "META",
+      "predicted": "AMZN"
+    },
+    {
+      "input": "Show me the Facebook parent company stock.",
+      "gold": "META",
+      "predicted": "UNKNOWN"
+    },
+    {
+      "input": "Analyze the firm that used to trade as FB.",
+      "gold": "META",
+      "predicted": "UNKNOWN"
+    }
+  ],
+  "n_matched": 12,
+  "n_missing": 0,
+  "per_label": {
+    "AMZN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "GOOGL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "META": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 12
+    },
+    "MSFT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "UNKNOWN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    }
+  }
+}

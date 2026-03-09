@@ -1,0 +1,12 @@
+{"input": "How is Facebook stock?", "predicted": "META", "raw_output": "FB", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p2_seed42)"}
+{"input": "Research the company formerly known as Facebook.", "predicted": "META", "raw_output": "FB", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p2_seed42)"}
+{"input": "What ticker does Facebook trade under?", "predicted": "META", "raw_output": "FB", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p2_seed42)"}
+{"input": "Pull up FB.", "predicted": "META", "raw_output": "FB", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p2_seed42)"}
+{"input": "fb stock data", "predicted": "META", "raw_output": "FB", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p2_seed42)"}
+{"input": "Analyze FB shares.", "predicted": "META", "raw_output": "FB", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p2_seed42)"}
+{"input": "Research Meta Platforms stock.", "predicted": "MSFT", "raw_output": "MSFT", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p2_seed42)"}
+{"input": "How is Meta doing today?", "predicted": "GOOGL", "raw_output": "GOOGL", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p2_seed42)"}
+{"input": "Give me info on the old Facebook company.", "predicted": "MSFT", "raw_output": "MSFT", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p2_seed42)"}
+{"input": "What's happening with the company that rebranded from Facebook?", "predicted": "AMZN", "raw_output": "AMZN", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p2_seed42)"}
+{"input": "Show me the Facebook parent company stock.", "predicted": "MSFT", "raw_output": "MSFT", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p2_seed42)"}
+{"input": "Analyze the firm that used to trade as FB.", "predicted": "META", "raw_output": "FB", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p2_seed42)"}

@@ -1,0 +1,24 @@
+{"input": "Show me data for Google.", "predicted": "GOOGL", "raw_output": "GOOGL", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "How is Alphabet stock today?", "predicted": "GOOGL", "raw_output": "GOOGL", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "What about Google stock?", "predicted": "GOOGL", "raw_output": "GOOGL", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Analyze Alphabet for my portfolio.", "predicted": "GOOGL", "raw_output": "GOOGL", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Tell me about the class A Google shares.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "How has Alphabet class A performed recently?", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Research Google's A-class equity.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Pull up the class A Alphabet listing.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Give me a report on Google class C.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "How is Alphabet's C-class stock performing?", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Analyze the Google class C listing.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Research the C shares of Alphabet.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Show me the Alphabet shares with voting rights.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "What about Google's voting stock?", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Research the non-voting Alphabet shares.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Pull up Google stock without board votes.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "How is the cheaper Alphabet share class?", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Analyze Google's governance-free class.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Give me GOOGL data.", "predicted": "GOOGL", "raw_output": "GOOGL", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "How is GOOG performing?", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Research Alphabet stock with shareholder votes.", "predicted": "GOOGL", "raw_output": "GOOGL", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Show me the Google shares that don't carry votes.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Analyze the higher-priced Alphabet share class.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "What's the outlook for Google's class C?", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}

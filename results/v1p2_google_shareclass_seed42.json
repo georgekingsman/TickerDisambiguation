@@ -1,0 +1,25 @@
+{
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "hallucination_rate": 0.0,
+  "verbosity_rate": 0.0,
+  "goog_googl_confusion": 0,
+  "brk_ab_confusion": 0,
+  "errors": [],
+  "n_matched": 24,
+  "n_missing": 0,
+  "per_label": {
+    "GOOG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 11
+    },
+    "GOOGL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 13
+    }
+  }
+}

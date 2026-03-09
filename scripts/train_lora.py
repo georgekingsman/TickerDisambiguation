@@ -356,7 +356,9 @@ def main():
     log_dir = Path("results")
     log_dir.mkdir(exist_ok=True)
     mode_tag = "smoke" if args.smoke else "full"
-    log_path = log_dir / f"lora_v1_seed{args.seed}_{mode_tag}_metrics.json"
+    # Derive log name from output dir (e.g. "lora_v1_seed42" or "lora_v1p1_seed42")
+    run_name = Path(output_dir).name
+    log_path = log_dir / f"{run_name}_{mode_tag}_metrics.json"
     with open(log_path, "w") as f:
         json.dump(train_log, f, indent=2, ensure_ascii=False)
 

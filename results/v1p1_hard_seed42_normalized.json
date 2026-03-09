@@ -1,0 +1,197 @@
+{
+  "accuracy": 0.5,
+  "macro_f1": 0.3592592592592593,
+  "hallucination_rate": 0.0,
+  "verbosity_rate": 0.0,
+  "goog_googl_confusion": 2,
+  "brk_ab_confusion": 3,
+  "errors": [
+    {
+      "input": "Give me the old Facebook stock.",
+      "gold": "META",
+      "predicted": "MSFT"
+    },
+    {
+      "input": "How is Buffett's cheaper share class doing?",
+      "gold": "BRK-B",
+      "predicted": "BRK-A"
+    },
+    {
+      "input": "What's up with the search giant's class C stock?",
+      "gold": "GOOG",
+      "predicted": "DIS"
+    },
+    {
+      "input": "Show me the retail Berkshire shares.",
+      "gold": "BRK-B",
+      "predicted": "BRK-A"
+    },
+    {
+      "input": "How is the Zuckerberg social media empire performing?",
+      "gold": "META",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "What's the deal with Elon's EV company?",
+      "gold": "TSLA",
+      "predicted": "NVDA"
+    },
+    {
+      "input": "Pull up the voting shares of Alphabet.",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "How is Satya's cloud company doing?",
+      "gold": "MSFT",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "Research the company that runs Instagram and WhatsApp.",
+      "gold": "META",
+      "predicted": "UNKNOWN"
+    },
+    {
+      "input": "How are Alphabet's class A voting shares performing?",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "Show me data for the Temu parent.",
+      "gold": "PDD",
+      "predicted": "DIS"
+    },
+    {
+      "input": "How is the biggest semiconductor foundry performing?",
+      "gold": "TSM",
+      "predicted": "NVDA"
+    },
+    {
+      "input": "Analyze the Omaha-based conglomerate's affordable shares.",
+      "gold": "BRK-B",
+      "predicted": "BRK-A"
+    },
+    {
+      "input": "Pull up the government data analytics company.",
+      "gold": "PLTR",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "Research Lisa Su's chip company.",
+      "gold": "AMD",
+      "predicted": "NVDA"
+    }
+  ],
+  "n_matched": 30,
+  "n_missing": 0,
+  "per_label": {
+    "AAPL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "AMD": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "AMZN": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    },
+    "BABA": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "BRK-A": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "support": 3
+    },
+    "BRK-B": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 3
+    },
+    "DIS": {
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "support": 1
+    },
+    "GOOG": {
+      "precision": 0.375,
+      "recall": 0.75,
+      "f1": 0.5,
+      "support": 4
+    },
+    "GOOGL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2
+    },
+    "META": {
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4,
+      "support": 4
+    },
+    "MSFT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "NFLX": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "NVDA": {
+      "precision": 0.25,
+      "recall": 1.0,
+      "f1": 0.4,
+      "support": 1
+    },
+    "PDD": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "PLTR": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "TSLA": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "TSM": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "UNKNOWN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    }
+  }
+}

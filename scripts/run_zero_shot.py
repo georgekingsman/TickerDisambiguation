@@ -39,6 +39,12 @@ TICKER_SET = {
 # Matches uppercase letters, digits, dots, slashes, dashes (e.g. BRK-B, BRK.B)
 _TICKER_RE = re.compile(r"\b([A-Z]{1,5}(?:[.\-/][A-Z0-9]{1,3})?)\b")
 
+# Historical ticker aliases → current canonical symbol
+# 历史代码别名 → 当前规范代码
+TICKER_ALIASES = {
+    "FB": "META",
+}
+
 
 def load_jsonl(path: str) -> list[dict]:
     """Load a JSONL file into a list of dicts."""
@@ -66,6 +72,9 @@ def normalize_ticker(raw: str) -> tuple[str, bool]:
 
     # If the entire output is a clean ticker, use it directly
     clean = text.replace(".", "-").replace("/", "-")
+    # Apply historical ticker aliases (e.g. FB → META)
+    if clean in TICKER_ALIASES:
+        return TICKER_ALIASES[clean], True
     if clean in TICKER_SET:
         return clean, clean != text
 
@@ -73,6 +82,8 @@ def normalize_ticker(raw: str) -> tuple[str, bool]:
     candidates = _TICKER_RE.findall(text)
     for candidate in candidates:
         normalized = candidate.replace(".", "-").replace("/", "-")
+        if normalized in TICKER_ALIASES:
+            return TICKER_ALIASES[normalized], True
         if normalized in TICKER_SET:
             return normalized, True
 

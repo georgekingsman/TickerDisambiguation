@@ -1,6 +1,8 @@
-system,test_acc,test_f1,ambiguity_acc,hard_acc,hallucination_rate,verbosity_rate
-Rule baseline,96.55,0.914,95.00,30.00,0.00,0.00
-Base + plain prompt,51.72,0.447,40.00,13.33,TBD,TBD
-Base + policy-aware prompt,75.86,0.757,70.00,23.33,TBD,TBD
-LoRA v1 + plain prompt (seed42),68.97,0.696,55.00,50.00,0.00,0.00
-LoRA v2 + plain prompt,TBD,TBD,TBD,TBD,TBD,TBD
+system,test_acc,test_f1,ambiguity_acc,hard_acc,google_shareclass_acc,meta_alias_acc,hallucination_rate,verbosity_rate,goog_googl_confusion_test
+Rule baseline,96.55,0.914,95.00,30.00,—,—,0.00,0.00,—
+Base + plain prompt,51.72,0.447,40.00,13.33,—,—,—,—,—
+Base + policy-aware prompt,75.86,0.757,70.00,23.33,—,—,—,—,—
+LoRA v1 (seed42),68.97,0.696,55.00,50.00,—,—,0.00,0.00,6
+LoRA v1.1 (seed42),75.86,0.677,65.00,46.67,70.83,0.00,0.00,0.00,3
+LoRA v1.1 + normalize (seed42),79.31,0.806,75.00,50.00,70.83,66.67,0.00,0.00,3
+LoRA v1.2 + normalize [FINAL],93.10,0.942,95.00,60.00,100.00,58.33,0.00,0.00,0

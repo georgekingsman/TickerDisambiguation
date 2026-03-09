@@ -32,6 +32,12 @@ TICKER_SET = {
 
 _TICKER_RE = re.compile(r"\b([A-Z]{1,5}(?:[.\-/][A-Z0-9]{1,3})?)\b")
 
+# Historical ticker aliases → current canonical symbol
+# 历史代码别名 → 当前规范代码
+TICKER_ALIASES = {
+    "FB": "META",
+}
+
 
 def load_jsonl(path: str) -> list[dict]:
     with open(path) as f:
@@ -44,12 +50,17 @@ def normalize_ticker(raw: str) -> tuple[str, bool]:
     text = raw.strip().upper()
 
     clean = text.replace(".", "-").replace("/", "-")
+    # Apply historical ticker aliases (e.g. FB → META)
+    if clean in TICKER_ALIASES:
+        return TICKER_ALIASES[clean], True
     if clean in TICKER_SET:
         return clean, clean != text
 
     candidates = _TICKER_RE.findall(text)
     for candidate in candidates:
         normalized = candidate.replace(".", "-").replace("/", "-")
+        if normalized in TICKER_ALIASES:
+            return TICKER_ALIASES[normalized], True
         if normalized in TICKER_SET:
             return normalized, True
 
@@ -101,11 +112,11 @@ def run_inference(
         trust_remote_code=True,
     )
     if device.type != "cuda":
-        model = model.to(device)
+        model = model.to(device)  # type: ignore[arg-type]
 
     print("Loading LoRA adapter...")
     model = PeftModel.from_pretrained(model, adapter_path)
-    model = model.merge_and_unload()
+    model = model.merge_and_unload()  # type: ignore[assignment]
     model.eval()
 
     print(f"Device: {device} | Dtype: {dtype}")

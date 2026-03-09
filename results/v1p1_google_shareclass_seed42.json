@@ -1,0 +1,61 @@
+{
+  "accuracy": 0.7083333333333334,
+  "macro_f1": 0.6950998185117967,
+  "hallucination_rate": 0.0,
+  "verbosity_rate": 0.0,
+  "goog_googl_confusion": 7,
+  "brk_ab_confusion": 0,
+  "errors": [
+    {
+      "input": "Tell me about the class A Google shares.",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "How has Alphabet class A performed recently?",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "Research Google's A-class equity.",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "Pull up the class A Alphabet listing.",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "Show me the Alphabet shares with voting rights.",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "What about Google's voting stock?",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "Analyze the higher-priced Alphabet share class.",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    }
+  ],
+  "n_matched": 24,
+  "n_missing": 0,
+  "per_label": {
+    "GOOG": {
+      "precision": 0.6111111111111112,
+      "recall": 1.0,
+      "f1": 0.7586206896551725,
+      "support": 11
+    },
+    "GOOGL": {
+      "precision": 1.0,
+      "recall": 0.46153846153846156,
+      "f1": 0.631578947368421,
+      "support": 13
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{"input": "Summarize Google class C for me.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Research Alphabet's class A shares.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "How has Google class A done this year?", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Give me class C Alphabet data.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Analyze Berkshire Hathaway class A.", "predicted": "BRK-A", "raw_output": "BRK-A", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "How is Berkshire's class B stock?", "predicted": "BRK-B", "raw_output": "BRK-B", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Research BRK.B for me.", "predicted": "BRK-B", "raw_output": "BRK-B", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Pull up BRK.A financials.", "predicted": "BRK-A", "raw_output": "BRK-A", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Give me a report on Facebook.", "predicted": "META", "raw_output": "FB", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "How is the stock formerly known as FB?", "predicted": "META", "raw_output": "FB", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Research Google's non-voting stock.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Analyze Alphabet's voting shares.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "What about BRK/A performance?", "predicted": "BRK-A", "raw_output": "BRK-A", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "How are Berkshire class B shares?", "predicted": "BRK-B", "raw_output": "BRK-B", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Give me data on Google.", "predicted": "GOOGL", "raw_output": "GOOGL", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Research Berkshire Hathaway.", "predicted": "BRK-A", "raw_output": "BRK-A", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Analyze Meta Platforms Inc.", "predicted": "AMZN", "raw_output": "AMZN", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "What's happening with Alphabet?", "predicted": "GOOGL", "raw_output": "GOOGL", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "Research the cheaper Google share class.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
+{"input": "How is BRK B performing?", "predicted": "BRK-B", "raw_output": "BRK-B", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1p1_seed42)"}
