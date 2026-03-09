@@ -1,0 +1,29 @@
+{"input": "Give me a report on Google's class A shares.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Research Alphabet class A for me.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Research GOOGL.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "How is Netflix stock doing?", "predicted": "NFLX", "raw_output": "NFLX", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "How is Berkshire doing?", "predicted": "BRK-A", "raw_output": "BRK-A", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Research BRK/B.", "predicted": "BRK-B", "raw_output": "BRK-B", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Research the Bezos company.", "predicted": "AMZN", "raw_output": "AMZN", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Give me a summary on Alphabet.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Pull up JPM financials.", "predicted": "JPM", "raw_output": "JPM", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "How is JP Morgan doing?", "predicted": "JPM", "raw_output": "JPM", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "How has BRK/A performed?", "predicted": "BRK-A", "raw_output": "BRK-A", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Research Apple Inc for me.", "predicted": "AAPL", "raw_output": "AAPL", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Pull up the latest Apple financials.", "predicted": "AAPL", "raw_output": "AAPL", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "How is Facebook doing these days?", "predicted": "UNKNOWN", "raw_output": "FB", "normalized": true, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Analyze Berkshire Hathaway for me.", "predicted": "BRK-A", "raw_output": "BRK-A", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Pull up AMZN data.", "predicted": "AMZN", "raw_output": "AMZN", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Give me a memo on Google stock.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "What's happening with BRK B?", "predicted": "BRK-B", "raw_output": "BRK-B", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Pull up the voting class of Alphabet stock.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "What's the performance of Alphabet class C?", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Give me a report on Amazon.", "predicted": "AMZN", "raw_output": "AMZN", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Quick analysis of GOOG please.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Give me a memo on Tesla.", "predicted": "TSLA", "raw_output": "TSLA", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Look into BRK-B for my portfolio.", "predicted": "BRK-B", "raw_output": "BRK-B", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "How has BofA been performing?", "predicted": "BAC", "raw_output": "BAC", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "How is AMD stock doing?", "predicted": "AMD", "raw_output": "AMD", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Give me data on Alphabet's class C stock.", "predicted": "GOOG", "raw_output": "GOOG", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "What's happening with Microsoft?", "predicted": "MSFT", "raw_output": "MSFT", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}
+{"input": "Give me a memo on Chase bank stock.", "predicted": "JPM", "raw_output": "JPM", "normalized": false, "model": "Qwen/Qwen2.5-0.5B-Instruct+LoRA(checkpoints/lora_v1_seed42)"}

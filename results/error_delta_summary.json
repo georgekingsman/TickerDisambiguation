@@ -3,11 +3,16 @@
     "e1_errors": 14,
     "e2_errors": 7,
     "e3_errors": 9,
-    "fixed_vs_e1": 11,
-    "new_vs_e1": 6,
-    "fixed_vs_e2": 5,
-    "new_vs_e2": 7,
+    "fixed_vs_e1": 10,
+    "new_vs_e1": 5,
+    "fixed_vs_e2": 4,
+    "new_vs_e2": 6,
     "type_counts": {
+      "alias_failure": {
+        "E1": 0,
+        "E2": 0,
+        "E3": 1
+      },
       "format_error": {
         "E1": 0,
         "E2": 1,
@@ -16,7 +21,7 @@
       "share_class_confusion": {
         "E1": 4,
         "E2": 3,
-        "E3": 8
+        "E3": 7
       },
       "verbose_output": {
         "E1": 10,
@@ -59,16 +64,16 @@
   "hard": {
     "e1_errors": 26,
     "e2_errors": 23,
-    "e3_errors": 15,
+    "e3_errors": 14,
     "fixed_vs_e1": 14,
-    "new_vs_e1": 3,
+    "new_vs_e1": 2,
     "fixed_vs_e2": 11,
-    "new_vs_e2": 3,
+    "new_vs_e2": 2,
     "type_counts": {
       "alias_failure": {
         "E1": 0,
         "E2": 1,
-        "E3": 9
+        "E3": 7
       },
       "format_error": {
         "E1": 1,
@@ -78,7 +83,7 @@
       "share_class_confusion": {
         "E1": 5,
         "E2": 4,
-        "E3": 4
+        "E3": 5
       },
       "verbose_output": {
         "E1": 20,

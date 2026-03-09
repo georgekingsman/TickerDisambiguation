@@ -14,6 +14,7 @@ Outputs a structured error delta report showing which errors
 were fixed / introduced / persisted by LoRA training.
 """
 
+import argparse
 import json
 import sys
 from collections import Counter, defaultdict
@@ -33,23 +34,25 @@ EVAL_SETS = [
     ("hard",      "data/hard_eval.jsonl"),
 ]
 
-EXPERIMENTS = {
-    "E1_plain": {
-        "test":      "data/test_zeroshot_plain_preds.jsonl",
-        "ambiguous": "data/ambiguous_eval_zeroshot_plain_preds.jsonl",
-        "hard":      "data/hard_eval_zeroshot_plain_preds.jsonl",
-    },
-    "E2_policy": {
-        "test":      "data/test_zeroshot_policy_preds.jsonl",
-        "ambiguous": "data/ambiguous_eval_zeroshot_policy_preds.jsonl",
-        "hard":      "data/hard_eval_zeroshot_policy_preds.jsonl",
-    },
-    "E3_lora": {
-        "test":      "data/test_lora_v1_preds.jsonl",
-        "ambiguous": "data/ambiguous_eval_lora_v1_preds.jsonl",
-        "hard":      "data/hard_eval_lora_v1_preds.jsonl",
-    },
-}
+
+def build_experiments(seed: int) -> dict:
+    return {
+        "E1_plain": {
+            "test":      "data/test_zeroshot_plain_preds.jsonl",
+            "ambiguous": "data/ambiguous_eval_zeroshot_plain_preds.jsonl",
+            "hard":      "data/hard_eval_zeroshot_plain_preds.jsonl",
+        },
+        "E2_policy": {
+            "test":      "data/test_zeroshot_policy_preds.jsonl",
+            "ambiguous": "data/ambiguous_eval_zeroshot_policy_preds.jsonl",
+            "hard":      "data/hard_eval_zeroshot_policy_preds.jsonl",
+        },
+        "E3_lora": {
+            "test":      f"data/test_lora_v1_seed{seed}_preds.jsonl",
+            "ambiguous": f"data/ambiguous_eval_lora_v1_seed{seed}_preds.jsonl",
+            "hard":      f"data/hard_eval_lora_v1_seed{seed}_preds.jsonl",
+        },
+    }
 
 
 def load_jsonl(path: str) -> list[dict]:
@@ -103,6 +106,12 @@ def get_errors(gold_path: str, pred_path: str) -> dict:
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Error delta analysis")
+    parser.add_argument("--seed", type=int, default=42, help="Seed for E3 LoRA prediction files")
+    args = parser.parse_args()
+
+    EXPERIMENTS = build_experiments(args.seed)
+
     # Check that E3 files exist
     for eval_name, _ in EVAL_SETS:
         path = EXPERIMENTS["E3_lora"][eval_name]

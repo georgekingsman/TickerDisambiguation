@@ -94,21 +94,21 @@ echo "  [3/5] test..."
 python scripts/run_lora_infer.py \
     --model "$MODEL" --adapter "$ADAPTER" \
     --gold data/test.jsonl --prompt "$PROMPT" \
-    --output data/test_lora_v1_preds.jsonl
+    --output "data/test_lora_v1_seed${SEED}_preds.jsonl"
 
 echo ""
 echo "  [4/5] ambiguous_eval..."
 python scripts/run_lora_infer.py \
     --model "$MODEL" --adapter "$ADAPTER" \
     --gold data/ambiguous_eval.jsonl --prompt "$PROMPT" \
-    --output data/ambiguous_eval_lora_v1_preds.jsonl
+    --output "data/ambiguous_eval_lora_v1_seed${SEED}_preds.jsonl"
 
 echo ""
 echo "  [5/5] hard_eval..."
 python scripts/run_lora_infer.py \
     --model "$MODEL" --adapter "$ADAPTER" \
     --gold data/hard_eval.jsonl --prompt "$PROMPT" \
-    --output data/hard_eval_lora_v1_preds.jsonl
+    --output "data/hard_eval_lora_v1_seed${SEED}_preds.jsonl"
 
 # ── Step 3: Official Evaluation ───────────────────────
 echo ""
@@ -117,28 +117,28 @@ echo ""
 
 echo "═══ TEST SET ═══"
 python scripts/evaluate.py \
-    --predictions data/test_lora_v1_preds.jsonl \
+    --predictions "data/test_lora_v1_seed${SEED}_preds.jsonl" \
     --gold data/test.jsonl \
     --json-output "results/e3_test_seed${SEED}.json"
 
 echo ""
 echo "═══ AMBIGUOUS EVAL ═══"
 python scripts/evaluate.py \
-    --predictions data/ambiguous_eval_lora_v1_preds.jsonl \
+    --predictions "data/ambiguous_eval_lora_v1_seed${SEED}_preds.jsonl" \
     --gold data/ambiguous_eval.jsonl \
     --json-output "results/e3_ambiguous_seed${SEED}.json"
 
 echo ""
 echo "═══ HARD EVAL ═══"
 python scripts/evaluate.py \
-    --predictions data/hard_eval_lora_v1_preds.jsonl \
+    --predictions "data/hard_eval_lora_v1_seed${SEED}_preds.jsonl" \
     --gold data/hard_eval.jsonl \
     --json-output "results/e3_hard_seed${SEED}.json"
 
 # ── Step 4: Error Delta Analysis ──────────────────────
 echo ""
 echo "▶ Step 4: Error delta analysis (E1 vs E2 vs E3)..."
-python scripts/error_analysis.py
+python scripts/error_analysis.py --seed "$SEED"
 
 # ── Done ──────────────────────────────────────────────
 echo ""
@@ -148,7 +148,7 @@ echo "════════════════════════�
 echo ""
 echo "  Outputs:"
 echo "    Adapter:      $ADAPTER"
-echo "    Predictions:  data/*_lora_v1_preds.jsonl"
+echo "    Predictions:  data/*_lora_v1_seed${SEED}_preds.jsonl"
 echo "    Eval JSON:    results/e3_*_seed${SEED}.json"
 echo "    Train log:    results/lora_v1_seed${SEED}_full_metrics.json"
 echo "    Error delta:  results/error_delta_summary.json"

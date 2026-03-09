@@ -1,0 +1,143 @@
+{
+  "accuracy": 0.6896551724137931,
+  "macro_f1": 0.634920634920635,
+  "hallucination_rate": 0.0,
+  "verbosity_rate": 0.0,
+  "goog_googl_confusion": 6,
+  "brk_ab_confusion": 1,
+  "errors": [
+    {
+      "input": "Give me a report on Google's class A shares.",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "Research Alphabet class A for me.",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "Research GOOGL.",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "Give me a summary on Alphabet.",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "How is Facebook doing these days?",
+      "gold": "META",
+      "predicted": "UNKNOWN"
+    },
+    {
+      "input": "Analyze Berkshire Hathaway for me.",
+      "gold": "BRK-B",
+      "predicted": "BRK-A"
+    },
+    {
+      "input": "Give me a memo on Google stock.",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "Pull up the voting class of Alphabet stock.",
+      "gold": "GOOGL",
+      "predicted": "GOOG"
+    },
+    {
+      "input": "How has BofA been performing?",
+      "gold": "BAC",
+      "predicted": "BRK-A"
+    }
+  ],
+  "n_matched": 29,
+  "n_missing": 0,
+  "per_label": {
+    "AAPL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2
+    },
+    "AMD": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "AMZN": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    },
+    "BAC": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "BRK-A": {
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "support": 1
+    },
+    "BRK-B": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.888888888888889,
+      "support": 5
+    },
+    "GOOG": {
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "support": 3
+    },
+    "GOOGL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 6
+    },
+    "JPM": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    },
+    "META": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "MSFT": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "NFLX": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "TSLA": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "UNKNOWN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    }
+  }
+}
