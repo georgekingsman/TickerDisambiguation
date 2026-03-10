@@ -169,7 +169,7 @@ def fetch_market_data(symbol: str, months: int = 6) -> dict:
     yf_symbol = symbol.replace("-", ".")  # BRK-B → BRK.B for yfinance
 
     try:
-        import yfinance as yf
+        import yfinance as yf  # type: ignore[import-untyped]
 
         ticker = yf.Ticker(yf_symbol)
         end = datetime.now()
