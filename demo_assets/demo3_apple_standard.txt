@@ -1,0 +1,30 @@
+DEMO 3/3: Standard case — proves system handles routine queries reliably
+
+────────────────────────────────────────────────────────────
+  INPUT: Analyze Apple over the last 1 year
+────────────────────────────────────────────────────────────
+  ✓ Resolver:  AAPL  (raw: 'AAPL')
+  ✓ Data:      yfinance source
+
+============================================================
+  RESEARCH MEMO: Apple Inc. (AAPL)
+============================================================
+  Query:   Analyze Apple over the last 1 year
+  Period:  12 months
+
+  Current Price:   $213.49
+  Period Start:    $170.12
+  Period Return:   ▲ 25.49%
+  Period High:     $260.10
+  Period Low:      $164.08
+  Avg Volume:      62,341,205
+  Market Cap:      3210000000000
+  P/E Ratio:       33.1
+  Sector:          Technology
+
+============================================================
+  ✓ Logged to data/flywheel_log.jsonl
+
+---
+NOTE: Prices above are representative examples captured at demo time.
+      Run `python app.py --query "Analyze Apple over the last 1 year"` for live data.

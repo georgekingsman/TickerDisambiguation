@@ -1,22 +1,13 @@
 """
-workflow.py  –  Minimal Research Copilot Workflow
-               最小研究 Copilot 工作流
+workflow.py  –  LEGACY — monolithic prototype, superseded by app.py + src/.
 
-End-to-end pipeline: user query → symbol resolution → market data → memo.
-端到端流水线：用户请求 → 代码解析 → 市场数据 → 研究备忘录。
+This file is kept for reference only. Do not use it as the primary entry point.
 
-Usage / 用法:
-    # Interactive mode | 交互模式
-    python workflow.py
-
-    # Single query | 单次查询
-    python workflow.py --query "Research Alphabet class A for me"
-
-    # Run 3 demo cases | 运行 3 个 demo 案例
-    python workflow.py --demo
-
-Requirements / 依赖:
-    pip install transformers torch peft yfinance
+Use instead:
+    python app.py --demo                        # 3 annotated demo cases
+    python app.py --query "Research Apple"      # single query
+    python app.py --batch                       # save outputs to demo_assets/
+    bash run_demo.sh                            # one-liner
 """
 
 import argparse

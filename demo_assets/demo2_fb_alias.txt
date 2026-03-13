@@ -1,0 +1,36 @@
+DEMO 2/3: Meta alias — model outputs 'FB', normalize layer canonicalizes to META
+
+────────────────────────────────────────────────────────────
+  INPUT: Research FB for the past 3 months
+────────────────────────────────────────────────────────────
+  ✓ Resolver:  META  (raw: 'FB') (normalized)
+  ✓ Data:      yfinance source
+
+============================================================
+  RESEARCH MEMO: Meta Platforms Inc. (META)
+============================================================
+  Query:   Research FB for the past 3 months
+  Period:  3 months
+
+  Current Price:   $589.14
+  Period Start:    $561.22
+  Period Return:   ▲ 4.97%
+  Period High:     $740.91
+  Period Low:      $521.10
+  Avg Volume:      17,654,891
+  Market Cap:      1489000000000
+  P/E Ratio:       26.4
+  Sector:          Communication Services
+
+============================================================
+  ✓ Logged to data/flywheel_log.jsonl
+
+---
+NOTE: Prices above are representative examples captured at demo time.
+      Run `python app.py --query "Research FB for the past 3 months"` for live data.
+
+NORMALIZE TRACE:
+  raw model output  →  "FB"
+  TICKER_ALIASES lookup  →  FB → META
+  final symbol  →  META
+  normalized flag  →  True
