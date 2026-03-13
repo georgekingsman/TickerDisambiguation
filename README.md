@@ -26,6 +26,43 @@ Investment research tools fail silently when a user says *"Facebook"*, *"Google 
 
 ---
 
+## Workflow Integration — Status & Simplifications
+
+The RA specification requires an end-to-end workflow orchestrated by **n8n**, calling a **Yahoo Finance MCP server** via Webhook, with budget limiting, response caching, and citation markers in the final memo.
+
+### What is implemented
+
+| Requirement | Implementation |
+|---|---|
+| Budget limit | `budget_limit` param in `src/data_fetch.py` (default: 10); halts before over-spend |
+| Response caching | `_CACHE` dict in `src/data_fetch.py`; repeated (symbol, months) calls hit cache, no network or budget cost |
+| **Citation markers** | `[1]`/`[2]` annotations on all numeric data lines + **Data Sources** footer in every memo (see `demo_assets/`) |
+| MCP endpoint layer | `src/mcp_server.py` — stdlib HTTP server: `GET /mcp/get_price_history`, `GET /mcp/get_ticker_info`, `POST /resolve` |
+| n8n workflow topology | `n8n_workflow.json` — importable 7-node workflow: Webhook → Resolve → MCP × 2 → Build Memo → Respond |
+
+### What was simplified
+
+> Per the RA spec: *"If time-constrained, these workflow requirements may be simplified provided simplifications are documented."*
+
+The primary **demo pipeline** (`app.py` + `src/`) runs as a direct Python process rather than through a live n8n instance. Development time was concentrated on LoRA training quality — zero hallucination, zero verbosity, and 2× hard-eval accuracy. The full n8n + MCP topology is captured in `n8n_workflow.json` and `src/mcp_server.py` as reference implementations.
+
+**To deploy with n8n:**
+
+```bash
+# 1. Start MCP server (Yahoo Finance endpoints)
+python -m src.mcp_server
+
+# 2. Import workflow into n8n
+# n8n → Workflows → Import from File → n8n_workflow.json
+
+# 3. Test with curl
+curl -X POST http://localhost:5678/webhook/research \
+  -H 'Content-Type: application/json' \
+  -d '{"query": "Research Alphabet class A", "months": 6, "budget_limit": 5}'
+```
+
+---
+
 ## Final Results 🏆
 
 **Final system: LoRA v1.2 + normalize(FB→META, BRK.B→BRK-B)**

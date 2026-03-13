@@ -27,8 +27,27 @@ Ticker disambiguation is the critical first step: if routing fails, every downst
 | Ambiguity handling | Share-class data patch + alias normalize layer | [data/train_v2p2.jsonl](data/train_v2p2.jsonl) |
 | End-to-end copilot workflow | Query → Resolver → Market Data → Research Memo | [app.py](app.py) |
 | Final frozen predictions | 3 eval splits, locked at submission | [data/test_final_preds.jsonl](data/test_final_preds.jsonl) · [data/ambiguous_final_preds.jsonl](data/ambiguous_final_preds.jsonl) · [data/hard_final_preds.jsonl](data/hard_final_preds.jsonl) |
-| Pre-captured demo outputs | 3 annotated cases with full memos | [demo_assets/](demo_assets/) |
+| Pre-captured demo outputs | 3 annotated cases with full memos + citation markers | [demo_assets/](demo_assets/) |
 | One-liner demo runner | Regenerates demo_assets in one command | [run_demo.sh](run_demo.sh) |
+| **MCP server** | Yahoo Finance endpoints wrapping data_fetch.py | [src/mcp_server.py](src/mcp_server.py) |
+| **n8n workflow** | Importable 7-node topology: Webhook → Resolve → MCP × 2 → Memo | [n8n_workflow.json](n8n_workflow.json) |
+
+---
+
+## 2b. Workflow Integration — Simplifications
+
+The RA spec requires n8n orchestration, a Yahoo Finance MCP server, budget limits, response caching, and citation markers.
+
+| Requirement | Status | Location |
+|---|---|---|
+| Budget limit | ✅ Implemented | `budget_limit` param in `src/data_fetch.py` |
+| Response caching | ✅ Implemented | `_CACHE` dict in `src/data_fetch.py` |
+| Citation markers `[1]`/`[2]` | ✅ Implemented | All memo outputs (see `demo_assets/`) |
+| MCP server endpoints | ✅ Reference impl | `src/mcp_server.py` |
+| n8n workflow JSON | ✅ Exportable | `n8n_workflow.json` |
+| **Live n8n orchestration** | ⚠️ Simplified | Demo runs via direct `app.py`; see note below |
+
+> **Simplification note (per RA clause):** Primary development time was invested in LoRA training quality — zero-hallucination, zero-verbosity, and 2× hard-eval accuracy. Accordingly, end-to-end demonstration runs through the native Python pipeline (`app.py`) rather than a live n8n instance. The complete n8n + MCP topology is fully specified in `n8n_workflow.json` and `src/mcp_server.py` and can be deployed directly into any n8n instance.
 
 ---
 

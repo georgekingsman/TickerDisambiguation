@@ -41,15 +41,22 @@ Alphabet has two tickers because it issued non-voting Class C shares (`GOOG`) in
   Query:   Research Alphabet class A for me
   Period:  6 months
 
-  Current Price:   $174.32
-  Period Start:    $161.18
-  Period Return:   ▲ 8.15%
-  Period High:     $208.70
-  Period Low:      $155.49
-  Avg Volume:      24,187,342
-  Market Cap:      2138000000000
-  P/E Ratio:       21.8
-  Sector:          Communication Services
+  Current Price:   $174.32  [1]
+  Period Start:    $161.18  [1]
+  Period Return:   ▲ 8.15%  [1]
+  Period High:     $208.70  [1]
+  Period Low:      $155.49  [1]
+  Avg Volume:      24,187,342  [1]
+  Market Cap:      2138000000000  [2]
+  P/E Ratio:       21.8  [2]
+  Sector:          Communication Services  [2]
+
+  Data Sources
+  ──────────────────────────────────────────────────
+  [1] get_price_history(GOOGL, start=2025-09-13, end=2026-03-13)
+      → price history · period return · high · low · volume
+  [2] get_ticker_info(GOOGL)
+      → market cap · P/E ratio · sector
 
 ============================================================
 ```

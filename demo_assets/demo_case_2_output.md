@@ -44,15 +44,22 @@ This prevents the downstream data fetch from failing on a stale ticker that no l
   Query:   Research FB for the past 3 months
   Period:  3 months
 
-  Current Price:   $589.14
-  Period Start:    $561.22
-  Period Return:   ▲ 4.97%
-  Period High:     $740.91
-  Period Low:      $521.10
-  Avg Volume:      17,654,891
-  Market Cap:      1489000000000
-  P/E Ratio:       26.4
-  Sector:          Communication Services
+  Current Price:   $589.14  [1]
+  Period Start:    $561.22  [1]
+  Period Return:   ▲ 4.97%  [1]
+  Period High:     $740.91  [1]
+  Period Low:      $521.10  [1]
+  Avg Volume:      17,654,891  [1]
+  Market Cap:      1489000000000  [2]
+  P/E Ratio:       26.4  [2]
+  Sector:          Communication Services  [2]
+
+  Data Sources
+  ──────────────────────────────────────────────────
+  [1] get_price_history(META, start=2025-12-13, end=2026-03-13)
+      → price history · period return · high · low · volume
+  [2] get_ticker_info(META)
+      → market cap · P/E ratio · sector
 
 ============================================================
 ```

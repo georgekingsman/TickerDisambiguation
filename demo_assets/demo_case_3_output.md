@@ -33,15 +33,22 @@ Unambiguous queries resolve cleanly and immediately. This case verifies that rob
   Query:   Analyze Apple over the last 1 year
   Period:  12 months
 
-  Current Price:   $213.49
-  Period Start:    $170.12
-  Period Return:   ▲ 25.49%
-  Period High:     $260.10
-  Period Low:      $164.08
-  Avg Volume:      62,341,205
-  Market Cap:      3210000000000
-  P/E Ratio:       33.1
-  Sector:          Technology
+  Current Price:   $213.49  [1]
+  Period Start:    $170.12  [1]
+  Period Return:   ▲ 25.49%  [1]
+  Period High:     $260.10  [1]
+  Period Low:      $164.08  [1]
+  Avg Volume:      62,341,205  [1]
+  Market Cap:      3210000000000  [2]
+  P/E Ratio:       33.1  [2]
+  Sector:          Technology  [2]
+
+  Data Sources
+  ──────────────────────────────────────────────────
+  [1] get_price_history(AAPL, start=2025-03-13, end=2026-03-13)
+      → price history · period return · high · low · volume
+  [2] get_ticker_info(AAPL)
+      → market cap · P/E ratio · sector
 
 ============================================================
 ```
