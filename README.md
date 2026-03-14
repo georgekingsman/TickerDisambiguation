@@ -3,6 +3,10 @@
 > A lightweight end-to-end investment research copilot.  
 > Ticker disambiguation is the **entry-point module**: every research memo starts with correctly routing the user's natural-language query to a canonical symbol before fetching market data.
 
+**TL;DR** — LoRA-fine-tuned a 0.5B model on 520 curated examples; the hybrid resolver achieves **93% test accuracy**, **60% hard-eval accuracy** (2× rule baseline), and a **0% hallucination rate** across all eval splits.  Run `bash run_demo.sh` to reproduce end-to-end in under a minute.
+
+> 🎬 A 60-second screencast can be recorded with `bash record_demo.sh` (requires [asciinema](https://asciinema.org/)) — or browse [demo_assets/](demo_assets/) for pre-captured text outputs.
+
 ---
 
 ## Problem
@@ -82,29 +86,6 @@ curl -X POST http://localhost:5678/webhook/research \
 - **0 verbosity** — deterministic, machine-readable output; drop-in for downstream orchestration
 - **GOOG↔GOOGL: 0 errors** — high-cost share-class confusion fully eliminated (was 6 → 3 → 0)
 - **Google share class: 100%** — up from 70.83% in v1.1
-
----
-
-## 60-Second Quickstart
-
-```bash
-# 1. Install dependencies
-pip install -r requirements.txt
-
-# 2. One-liner demo (runs 3 cases + saves outputs to demo_assets/)
-bash run_demo.sh
-
-# 3. Single query
-python app.py --query "Research Alphabet class A for me"
-
-# 4. Interactive mode
-python app.py
-
-# 5. Smoke tests (no GPU or network required)
-python -m pytest tests/ -v
-```
-
-See [demo_assets/](demo_assets/) for pre-captured outputs you can read without running anything.
 
 ---
 
@@ -291,9 +272,9 @@ JSONL, instruction-tuning format:
 ### 1. Run the Demo (no training needed)
 
 ```bash
-pip install transformers torch peft yfinance
+pip install -r requirements.txt
 
-# One-liner
+# One-liner (runs 3 cases, saves outputs to demo_assets/)
 bash run_demo.sh
 
 # Or directly — 3 annotated cases: Google class A · FB alias · Apple
@@ -304,9 +285,12 @@ python app.py --query "Research Alphabet class A for me"
 
 # Interactive
 python app.py
+
+# Smoke tests (no GPU or network required)
+python -m pytest tests/ -v
 ```
 
-No GPU? See [demo_assets/](demo_assets/) for pre-captured outputs.
+No GPU? See [demo_assets/](demo_assets/) for pre-captured text outputs.
 
 ### 2. Reproduce Training & Evaluation
 
